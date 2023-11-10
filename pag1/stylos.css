@@ -1,0 +1,211 @@
+/*hombre del restaurante y fondo*/
+.titulo{
+    color: black;
+    font-family: 'Rubik Distressed';
+    font-size: 3.5em;
+    position: fixed; 
+    z-index: 1;
+    margin-top: -1.6em;
+    margin-left: 6.6em;
+}
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed; left: 0; top: 0em;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804__340.jpg);
+    z-index: -1;
+}
+.fondotexto{
+    margin-top: -4em;
+    background-image: url(https://www.ahumados.shop/wp-content/uploads/2021/06/GettyImages-1228681870-2000.jpg);
+    height: 3.7em;
+    position: fixed; left: -1em;
+    width: 85.9em;
+    z-index: -1;
+}
+/*Este es el sistema que oculta o muestra la información segun el target que tengamos*/
+/*hasta donde sé display:none va a ocultar los contenidos a menos que se haya seleccionado*/
+.contenido {
+    display: none;   
+}
+.pestana:target .contenido, .pestana:last-of-type .contenido {
+    display: block;
+}
+.pestana:target ~ .pestana:last-of-type .contenido {
+    display: none;
+}
+/*posicionamiento de las pestañas*/
+.contenedor {
+    position: relative;
+    padding-top: 1em;
+}
+#pestana1>a { --pestanas-position: 0; }
+#pestana2>a { --pestanas-position: 1; }
+#pestana3>a { --pestanas-position: 2; }
+#pestana4>a { --pestanas-position: 3; }
+.pestana a{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    position: fixed;
+    width: 220px;
+    height: 10px; 
+    border-radius: 1em;
+    top: 5em;
+    left: calc(421px * var(--pestanas-position));
+    border: .1em solid #F2B705;
+    z-index: 1;
+    background-color:  #BF0413;
+    padding: 1em;    
+}
+a:hover{
+    background-color: black;
+}
+a {text-decoration: none;}
+/*Aqui esta todo el formato para el contenido*/
+.pestana .contenido{
+    color: white;
+    position: relative; 
+    padding-top: auto;
+    padding-bottom: 1em;
+}
+.contenido h1{
+    text-align: center;
+    margin: 1em;
+    position: relative; top: 1em;
+}
+.contenido p{
+    margin: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+/*Esta parte es la que le va a dar estilo al texto que se encuentra en el menu principal asi como la foto*/
+.historia {
+    color: white;
+    margin-top: -19em;
+    border-radius: 1em; 
+    position: relative; 
+    padding-top: auto;
+    padding-bottom: 1em;
+    width: 40em;
+    margin-left: 10em;
+    margin-top: -33em;
+    background: linear-gradient(to bottom, #BF0413, #730220);
+}
+.esteriotipo {
+    height: 20em;
+    width: 40em;
+    background-image: url(http://pixfans.com/imagenes/2007/11/don_vito.jpg);
+    margin-left: 53em;
+    margin-top: 25em;
+}
+/*Esta parte va a dar estilo al menu */
+/*formato de letras*/
+.platos {
+    margin-top: 7em;
+    text-align: center;
+}
+.platos h1{
+    font-size: 5em;
+}
+.platos h2{
+    margin: .5em auto;
+    border-radius: 2em;
+    width: 10em;
+    font-size: 2em;
+    background-color: #365902;
+}
+.grid{
+    display: grid;
+    background-color: #730220;
+    height: auto;
+    border-radius: 1em;
+}
+.platos .grid {
+    grid-template-columns: 23.6em 23.6em 23.6em 23.6em;
+}
+.grid img{
+    width: 350px;
+    border-radius: 1em;
+    margin: 1em;
+}
+.platos img:hover{
+    transform: scale(1.1, 1.1);
+}
+/*Galeria y disposición*/
+.imageness h1{
+    font-size: 4em;
+    background-color: #365902;
+    margin-top: 1em;
+}
+.imageness .grid{
+        margin-top: 6em;
+}
+.imageness .imr .grid {
+    grid-template-columns: 50em 50em;
+}
+.imageness .imc .grid {
+    grid-template-columns: 33em 33em 33em;
+}
+.imageness .imr .grid img{
+    margin-left: 2em;
+    height: 30em;
+    width: 40em;
+    box-shadow: 20px 20px 20px black;
+}
+.imageness .imc .grid img{
+    height: 17em;
+    width: 27em;
+    box-shadow: 20px 20px 20px black;
+}
+.im1 {
+    width: 64em;
+    margin-left: 17em;
+    margin-top: 8em;
+    box-shadow: 20px 20px 20px black;
+}
+.ime {
+    background-color: #730220;
+    margin-top: 6em;
+    border-radius: 1em;
+
+}
+.ime img{
+    margin-left: 7.5em;
+    border-radius: 1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 80em;
+    height: 35em;
+}
+
+/*Promociones */
+.promo h1{
+    margin-top: 2.5em;
+    font-size: 4em;
+    background-color: #365902;
+}
+.cupones {
+    margin: 7em;
+    display: grid;
+    grid-template-columns: 40em 40em;
+}
+.cupones {
+    background: white;
+    background: linear-gradient(90deg, white 60%, #730220 83%);
+    color: black;
+}
+.cupones p{
+    border-style: dashed;
+}
+/*solo pongo un poco de disño en la despedida  */
+.despedida{
+    position: relative; left: -1em; bottom: -4em;
+    height: auto;
+    width: 85.9em;
+    font-size:large;
+    text-align: center;
+    background-image: url(https://gaceta.cch.unam.mx/sites/default/files/styles/imagen_articulos_1920x1080/public/2022-03/fdb21d99-6185-4690-888c-33179b6248ed_16-9-aspect-ratio_default_0.jpeg?h=148742b8&itok=TB6S4oPa);
+}
+
+

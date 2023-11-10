@@ -1,0 +1,169 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    height: 70;
+    background-color: orange;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+footer{
+    height: 500;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.index{
+    position: relative;
+    margin: 50px;
+    background: rgba(0, 0, 0, .05);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.index .descripcion{
+    position: relative;
+    padding: 40px;
+}
+
+.index .descripcion h1{
+    display: inline-block;
+    background-color: white;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    position: relative;
+    margin: 50px;
+    background: rgba(0, 0, 0, .05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu .izq{
+    padding: 10px;
+}
+
+.menu .der{
+    padding: 10px;
+}
+
+.platos{
+    margin-bottom: 50px;
+}
+
+.platos:last-child{
+    margin-bottom: 0;
+}
+
+.platos .lista{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.platos .lista .comida{
+    min-width: 150px;
+}
+
+.platos .lista .comida h5{
+    color: gray;
+    font-weight: 600;
+}
+
+.platos .lista .precio h4{
+    text-transform: uppercase;
+    color: red;
+    font-size: 16px;
+}
+
+.menu{
+    position: relative;
+    margin: 50px;
+    background: rgba(0, 0, 0, .05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gal{
+    position: relative;
+    margin: 50px;
+    background: rgba(0, 0, 0, .05);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gal .izq{
+    position: relative;
+    padding: 60px;
+    align-items: center;
+}
+
+.gal .der{
+    position: relative;
+    padding: 60px;
+    align-items: center;
+}
+
+.promo{
+    position: relative;
+    margin: 50px;
+    background: rgba(0, 0, 0, .05);
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.imgs{
+    position: relative;
+}
+
+.imgs div{
+    display: inline-block;
+    margin-right: 60px;
+}
