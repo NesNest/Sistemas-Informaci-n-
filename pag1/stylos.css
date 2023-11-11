@@ -208,4 +208,11 @@ a {text-decoration: none;}
     background-image: url(https://gaceta.cch.unam.mx/sites/default/files/styles/imagen_articulos_1920x1080/public/2022-03/fdb21d99-6185-4690-888c-33179b6248ed_16-9-aspect-ratio_default_0.jpeg?h=148742b8&itok=TB6S4oPa);
 }
 
-
+header{
+    display: flex;
+    height: 70;
+    background-color: orange;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
