@@ -1,178 +1,80 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=Restaurante content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
-    <link rel="stylesheet" href="estilo.css">
-    <!--aqui voy a insertar todos los font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #444;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">
-            <img src="imagenes/Mongolito.jpeg" alt="Logo" style="border-radius: 100%; width: 100px; height: 100px;">
-            <h2>Sistema de informacion</h2>
-        </div>
-        <nav>
-            <a href="index.html" class="inicio">Inicio</a>
-            <a href="pag1/pagina1.html" class="mneu">Nestor</a>
-            <a href="pag2/pagina2.html" class="mneu">Sebas</a>
-            <a href="pag3/pagina3.htm">Buenrostro</a>
-        </nav>
+        <h1>Mi Página Web</h1>
     </header>
-    <!-- Lo primero que pongo es el nombre del restaurante para que el cliente lo recuerde-->
-    <div class="titulo">
-        <h1>VENTO AURO </h1>
-        <div class="fondotexto"></div>
-    </div>
-    <div class="fondo"></div>
 
-    <!--Ahora hago el div que va a contener todas las pestañas-->
-    <div class="pestanas">
-        <div class="contenedor">
-            <!--ahora empezamos poniendo las pestañas con su contenido-->
-            <!--Este sistema de pestañas que busque funciona basiocamente a 
-            base de ocultar las pestañas y dejar que se vean, por lo que la 
-            ultima pestaña es la primera que se debe ver -->
-            <div id="pestana4" class="pestana">
-                <a href="#pestana4"> Promociones </a>
-                <div class="contenido">
-                    <div class="promo">
-                        <!--la clase cupones la metí en un grid -->
-                        <h1>Promociones</h1>
-                        <div class="cupones">
-                            <p>____________________________ <br><b>Beviernes</b><br> Todas las bebidas al <br>¡¡¡¡2x1!!!!<br>_</p>
-                            <p>____________________________ <br><b>Verdadero Ejecutivo</b><br> Si vienes de traje y pides el paquete ejecutivo <br>¡¡¡¡Te regalamos otra botella!!!! <br>_</p>
-                        </div>
-                        <div class="cupones">
-                            <p>____________________________ <br><b>Martes 2X1 </b><br> Aplica en todos los platos fuertes <br>(una vez por persona jiji)<br>¡¡¡¡2x1!!!!<br>_</p>
-                            <p>____________________________ <br><b>¿Te crees influencer?</b><br> Si subes una historia y compartes nuestra pagina <br>¡¡¡¡TE REGALAMOS UN REFRESCO!!!!<br>_</p>
-                        </div>
-                        <div class="cupones">
-                            <p>____________________________ <br><b>Al que madruga</b><br> Cualquier cosa que pidas antes de las 3PM <br>¡¡¡¡Tiene el 20% de descuento!!!!<br>_</p>
-                            <p>____________________________ <br><b>Odio los lunes</b><br>(¿Entendiste la refencia?)  <br>¡¡¡¡Los lunes la lasagna te incluye una bebida!!!!<br>_</p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-            <div id="pestana3" class="pestana">
-                <a href="#pestana3"> Galeria </a>
-                <div class="contenido">
-                    <h1>Galeria </h1>
-                    <div class="imageness">
-                        <h1>Admira nuestras hermosas instalaciones</h1>
-                        <div class="im1"><img src="https://i0.wp.com/thehappening.com/wp-content/uploads/2018/01/restaurante_ultraviolet_estrella_michelin.jpg?resize=1024%2C694&ssl=1" alt=""></div>
+    <nav>
+        <a href="pag1/pagina1.html">Botón 1</a>
+        <a href="pag2/pagina2.html">Botón 2</a>
+        <a href="pag3/pagina3.htm">Botón 3</a>
+        <a href="pag4/pagina4.html">Botón 4</a>
+    </nav>
 
-                        <h1>Contamos con las mejores instalaciones </h1>
-                        <div class="imr">
-                            <div class="grid">
-                                <img src="https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2018/10/restaurantes-italianos-cdmx.jpg?resize=960%2C927&ssl=1" alt="">
-                                <img src="https://topyucatan.com/uploads/notas/top-15-restaurantes-italianos-en-merida.jpg" alt="">
-                                <img src="https://phantom-expansion.unidadeditorial.es/d641d75665a5a9145999aa6dbfa10870/resize/640/assets/multimedia/imagenes/2020/12/14/16079494102603.jpg" alt="">
-                                <img src="https://cdn.forbes.com.mx/2019/03/Ardente-e1552545780717-640x360.jpg" alt="">
-                            </div>
-                        </div>
-                        <h1>Disfruta de nuestra deliciosa comida</h1>
-                        <div class="imc">
-                            <div class="grid">
-                                <img src="https://babycocina.com/wp-content/uploads/2020/07/Recetas-Italianas.jpg" alt="">
-                                <img src="https://ep01.epimg.net/elcomidista/imagenes/2022/07/15/articulo/1657882192_496390_1658128851_noticia_normal.jpg" alt="">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_C4Oz-lJ6DxQ0AspI7-zuCXlwvHco9sWrw&usqp=CAU" alt="">
-                                <img src="https://emprendedorgastronomico.com/wp-content/uploads/2021/01/cocina-italiana-2.jpg" alt="">
-                                <img src="https://mxcity.mx/wp-content/uploads/2015/08/italian-food.jpg" alt="">
-                                <img src="https://corbuse.edu.mx/blog/wp-content/uploads/2016/09/CORBUSE-Cursos-de-cocina-italiana-en-mexico.jpg" alt="">
-                            </div>
+    <section>
+        <h2>Sección 1</h2>
+        <p>¡Bienvenido a mi página web! Aquí encontrarás información interesante.</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </section>
 
-                        </div>
-                        <h1>Puedes apartar salas especiales para tus EVENTOS</h1>
-                        <div class="ime">
-                            <img src="https://img.nh-hotels.net/pr1Xq/Erb83/original/MRS_NH_collection-mexico-city-reforma_290_2000x805-0_176.jpg?output-quality=80&resize=1110:*&composite-to=center,center|1110:380&background-color=white" alt="">
-                            <img src="https://www.eventosgruposalamandra.com/wp-content/uploads/2017/01/mya-sala-eventos-valencia.jpg" alt="">
+    <section>
+        <h2>Sección 2</h2>
+        <p>Más contenido emocionante...</p>
+    </section>
 
-                        </div>
-                    </div>
-                </div>
+    <footer>
+        <p>&copy; 2023 Mi Página Web</p>
+    </footer>
 
-            </div>
-            <div id="pestana2" class="pestana">
-                <a href="#pestana2"> Menu comida </a>
-                <div class="contenido">
-                    <div class="platos">
-                        <h1>Menu comida </h1>
-                        <br><hr>
-                        <h2>Platos fuertes</h2>
-                        <div class="grid">
-                            <img src="https://blog.edenred.es/wp-content/uploads/2021/05/Comidaitaliana-Spagettis.jpg" alt="spagueti">
-                           
-                            <img src="https://unaitalianaenlacocina.es/wp-content/uploads/DSC_6976.jpg" alt="spagueti">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiu4yDgKDn6eagJOWkxMrTVn_jQC_Bb6Fy7g&usqp=CAU" alt="spagueti">
-                            <p>Plato de Spagueti <br> Mini........................ $150  <br> Grande.................... $250 <br> Poblano.................... $250</p>
-                            <p>Lasagna <br> Mini........................ $200  <br> Enorme.................... $400</p>
-                            <p>Rollitos De calabacin <br> bocado.................... $50 <br> Minis.................... $100  <br> Extra.................... $150</p>
-                            <p>Lasagna <br> Mini........................ $200  <br> Enorme.................... $400</p>
-                        </div>
-                        <br>
-                        <h2>Por si tienes sed</h2>
-                        <div class="grid">
-                          
-                            <img src="https://saboryestilo.com.mx/wp-content/uploads/2019/11/recetas-de-cocina-soda-italiana.jpg" alt="spagueti">
-                            
-                            <p>Shirley Temple <br> alcohol........................ $150  <br> sin alchol.................... $250 <br> Litro........................... $250</p>
-                            <p>Sodas <br> Todas las sodas....... $40</p>
-                            <p>Sodas Italianas<br> Todas.................... $100 <br> Fresa<br> Mango<br> Tutifruti<br> </p> 
-                            <p>Vinos <br> Pregunte a su mecero la variedad</p>   
-                        </div>
-                        <br>
-                        <h2>¿Algo dulce como tú?</h2>
-                        <div class="grid">
-
-                            <img src="http://d6h7vs5ykbiug.cloudfront.net/wp-content/uploads/2014/12/Homemade-Torrone-Recipe-10.jpg" alt="spagueti">
-                            <p>Tiramisù <br> porción.................... $80 </p> 
-                            <p>gelato (o sea helado pero mamón) <br> plato.................... $40 </p> 
-                            <p>Panna Cota <br> porción.................... $100 </p> 
-                            <p>Torrone <br> porción.................... $30 </p> 
-                            <br>
-                        </div>
-                        <br>
-                        <h2>Paquetaxos</h2>
-                        <div class="grid">
-                            <p><b>Paquete Romantico </b> <br>(Solo para enamorados) <br> 2 Spagueti Grande a elección<br> una botella de vino <br> Y el postre más romantico <br>___________________ <br>$700</p> 
-                            <p><b>Paquete patetico</b> <br>(Solo para pateticos) <br> pizza individual <br> Una soda <br> Gelato  <br>___________________ <br>$240</p> 
-                            <p><b>Paquete Empresarial</b> <br>(Solo para empresarios) <br> Los 4 platillos <br> 4 Shirley Temple <br> Todos los postres  <br>___________________ <br>$2400</p> 
-                            <p><b>Paquete Dulceson</b> <br>(Solo para dulcesones) <br> Todos los postres  <br> botella de vino <br>___________________ <br>$350</p> 
-                           
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div id="pestana1" class="pestana">
-                <a href="#pestana1"> Menu Principal</a> 
-                <div class="contenido">
-                    <div class="esteriotipo"></div> 
-                    <div class="historia">
-                        <h1>¿Por qué deberias venir?</h1>
-                        <br><b>
-                        <p>En una ciudad distopica qué cada vez te exige más sudor y sangre ¿por qué no darse un pequeño lujo? Tú te lo merees pequeño trabajador del sistema ven y disfruta de la auténtica gastronomía italiana; ninguno de nuestros trabajadores es italiano, no conocemos nada de italia, pero vimos muchos videos de youtube. Pasa incontables horas de diversión en el restaurante de comida italiana VENTO AURO (efectivamente es una referencia a jojo's) el lugar más extravagante, divertido, que puedes pagar </p>
-                        <br><p>Somos un restaurante de comida italiana (por si no había quedado suficientemente claro) con una tradición mienaria de como... 5 meses idk, con la vista más bella de esta contaminada y sobrepoblada ciudad. Estamos seguros de que nuestros platillos, como el pollo relleno, carne a la mafia y exquisitas ensaladas con todo el sazón mediterráneo van a hacer lo mejor que tu inmundo paladar ha probado alguna vez.</p>
-                        <br><p>Prometemos no hacer demasiados esteriotipo sobre italia, además no puede faltar en nuestra mesa un buen vino acompañado de un buen queso y un buen libro. Contamos con una extensa carta para acompañar tu comida, así como una gran variedad de postres deliciosos.</p>
-                        </b>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </div>
-    <div class="despedida">
-        <b>
-        </b><h1>Proyecto para la clase de programación web </h1>
-        <b>Guerrero Molina Néstor Alejandro </b>
-        <h3>grupo 1559</h3>
-        <p>Todos los derechos reservados 2022</p>
-        <hr><br>
-        </b>
-    </div>
 </body>
 </html>
