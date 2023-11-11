@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Galería</title>
+</head>
+<!--En general esta será la estructura principal de cada una de las ventanas-->
+<body>
+    <!--Se abre etiqueta para el encabezado-->
+    <header>
+        <!--Dividimos el encabezado en 2 secciones, portada y logo-->
+        <section id="portada">
+            <!--Se coloca la imagen portada-->
+            <img src="IMAGENES\pizza2.jpg" alt="PIZZA" width="950px" height="250px">
+        </section>
+
+        <section id="logo">
+            <!--Logo-->
+            <img src="IMAGENES\logo.jpg" alt="PIZZA" width="350px" height="250px">
+        </section>
+    </header>
+
+    <!--Abrimos etiqueta para la creación del menu de navegación-->
+    <nav>
+        <ul>
+            <li><a href="index.htm">Inicio</a></li>
+            <li><a href="menu.htm">Menú</a></li>
+            <li><a href="galeria.htm">Galeria</a></li>
+            <li><a href="promos.htm">Promociones</a></li>
+        </ul>
+    </nav>
+ 
+    <!--Etiquetas para el contenido principal-->
+    <main>
+        <article>
+            <!--Div para hacer un cuadro que contendrá títulos, pero el primero es solo el que engloba todo-->
+            <div id="fondot">
+                <div id="titulo_principal">
+                    <h1>Galería</h1>
+                </div>
+            </div>
+            <div id="imagenes">
+                <img src="IMAGENES\g1.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g2.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g3.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g4.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g5.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g6.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g7.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g8.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g9.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g10.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g11.jpg" alt="" width="800px" height="500px">
+                <img src="IMAGENES\g12.jpg" alt="" width="800px" height="500px">
+            </div>
+        </article>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <!--Se usa el id "pie" para poder centrar el texto al pie de página-->
+        <p id="pie">Buenrostro Pardo Eduardo Alberto. Programación WEB. 1559. Diciembre 2022.</p>
+    </footer>
+</body>
+</html>
